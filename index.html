@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arriaza & Ramírez Asociados — Derecho Laboral</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="logo" href="#">Arriaza & Ramírez <span></span>Asociados</a>
+  <ul>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#testimonios">Testimonios</a></li>
+    <li><a class="btn-nav" href="#contacto">Consulta Gratuita</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Derecho Laboral Especializado</div>
+    <h1>Defendemos tus<br><em>derechos</em> en el<br>trabajo</h1>
+    <p class="hero-sub">
+      Representamos a trabajadores y empresas en conflictos laborales, despidos, indemnizaciones y negociaciones colectivas. Con medidas ajustadas a tus necesidades.
+    </p>
+    <div class="hero-actions">
+      <a href="#contacto" class="btn-primary">Consulta Gratuita</a>
+      <a href="#servicios" class="btn-secondary">Ver Servicios</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-right-pattern"></div>
+    <div class="team-panel">
+      <div class="team-eyebrow">Nuestro Equipo</div>
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="team-photo-wrap"><img src="media/abogado_laboral1.jpg" alt="Antonio Arriaza" class="team-photo"></div>
+          <div class="team-info">
+          <div class="team-name">Antonio Arriaza</div>
+          <div class="team-role">Abogado Laboral</div>
+        </div>
+      </div>
+        <div class="team-member">
+          <div class="team-photo-wrap"><img src="media/abogada_laboral1.jpg" alt="Francisca Ramírez" class="team-photo"></div>
+          <div class="team-info">
+          <div class="team-name">Francisca Ramírez</div>
+          <div class="team-role">Abogada Laboral</div>
+        </div>
+      </div>
+        <div class="team-member">
+          <div class="team-photo-wrap"><img src="media/administrativa1.jpg" alt="Saray Salinas" class="team-photo"></div>
+          <div class="team-info">
+          <div class="team-name">Saray Salinas</div>
+          <div class="team-role">Administrativa</div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="section" id="servicios">
+  <div class="section-label">Áreas de práctica</div>
+  <h2>¿En qué podemos<br>ayudarte?</h2>
+  <p class="section-intro">Ofrecemos representación legal integral en todas las materias del derecho laboral chileno, tanto para trabajadores como para empleadores.</p>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">⚖</div>
+      <div class="service-title">Despido Injustificado</div>
+      <p class="service-desc">Evaluamos tu caso, calculamos la indemnización que te corresponde y te representamos ante el juzgado laboral para obtener el máximo.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">📋</div>
+      <div class="service-title">Negociación Colectiva</div>
+      <p class="service-desc">Asesoramos a sindicatos y empresas en procesos de negociación colectiva, mediación y arbitraje laboral.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🛡</div>
+      <div class="service-title">Acoso Laboral </div>
+      <p class="service-desc">Representamos víctimas de acoso, hostigamiento y discriminación en el trabajo, incluyendo denuncias ante la Inspección del Trabajo.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">💼</div>
+      <div class="service-title">Contratos y Finiquitos</div>
+      <p class="service-desc">Revisión, redacción y negociación de contratos individuales, finiquitos y acuerdos de no competencia para proteger tus intereses.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">⏱</div>
+      <div class="service-title">Horas Extras y Remuneraciones</div>
+      <p class="service-desc">Reclamamos el pago de horas extras no remuneradas, diferencias salariales, bonos y beneficios que te corresponden por ley.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🏢</div>
+      <div class="service-title">Asesoría para Empresas</div>
+      <p class="service-desc">Acompañamos a empleadores en el cumplimiento normativo, reglamentos internos, procesos disciplinarios, gestión de riesgos laborales, reconsideraciones y reclamaciones de multas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section class="section-dark" id="proceso">
+  <div class="section-label" style="color: var(--gold);">Cómo trabajamos</div>
+  <h2 style="color: var(--white);">Tu caso, paso<br>a paso</h2>
+  <p class="section-intro">Un proceso claro y transparente desde el primer día.</p>
+
+  <div class="steps">
+    <div class="step" onclick="activateStep(this, 1)">
+      <div class="step-num">01</div>
+      <div class="step-title">Consulta gratuita</div>
+      <p class="step-desc">Revisamos los hechos de tu caso sin costo. Evaluamos la viabilidad y te explicamos tus opciones legales con total claridad.</p>
+      <div class="step-progress-container">
+        <div class="step-progress-bar"></div>
+      </div>
+    </div>
+    <div class="step" onclick="activateStep(this, 2)">
+      <div class="step-num">02</div>
+      <div class="step-title">Estrategia legal</div>
+      <p class="step-desc">Diseñamos la mejor estrategia para tu situación, con plazos estimados y una hoja de ruta detallada.</p>
+      <div class="step-progress-container">
+        <div class="step-progress-bar"></div>
+      </div>
+    </div>
+    <div class="step" onclick="activateStep(this, 3)">
+      <div class="step-num">03</div>
+      <div class="step-title">Representación</div>
+      <p class="step-desc">Actuamos en tu nombre ante empleadores, Inspección del Trabajo y tribunales laborales con plena dedicación.</p>
+      <div class="step-progress-container">
+        <div class="step-progress-bar"></div>
+      </div>
+    </div>
+    <div class="step" onclick="activateStep(this, 4)">
+      <div class="step-num">04</div>
+      <div class="step-title">Resolución</div>
+      <p class="step-desc">Negociamos o litigamos hasta obtener el resultado que mereces, manteniéndote informado en cada etapa del proceso.</p>
+      <div class="step-progress-container">
+        <div class="step-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ ELEGIRNOS -->
+<section class="why" id="nosotros">
+  <div class="why-left">
+    <div class="section-label">Por qué elegirnos</div>
+    <h2>Más que un<br>abogado,<br>un aliado</h2>
+    <p class="section-intro" style="margin-bottom: 0; margin-top: 1rem;">
+      En Arriaza & Ramírez Asociados entendemos que un conflicto laboral no es solo legal — afecta tu estabilidad, tu familia y tu futuro. Por eso te acompañamos con rigor y cercanía.
+    </p>
+  </div>
+  <div class="why-right">
+    <div class="why-item">
+      <div class="why-check">✓</div>
+      <div>
+        <div class="why-item-title">Honorarios transparentes</div>
+        <p class="why-item-desc">Sin letras pequeñas. Trabajamos con honorarios fijos o contingentes según el caso, acordados desde el inicio.</p>
+      </div>
+    </div>
+    <div class="why-item">
+      <div class="why-check">✓</div>
+      <div>
+        <div class="why-item-title">Respuesta en 24 horas</div>
+        <p class="why-item-desc">Sabemos que los tiempos son críticos en lo laboral. Garantizamos respuesta el mismo día hábil.</p>
+      </div>
+    </div>
+    <div class="why-item">
+      <div class="why-check">✓</div>
+      <div>
+        <div class="why-item-title">Especialistas exclusivos en lo laboral</div>
+        <p class="why-item-desc">No somos un estudio generalista. Toda nuestra práctica está dedicada al derecho del trabajo, lo que nos da una ventaja real.</p>
+      </div>
+    </div>
+    <div class="why-item">
+      <div class="why-check">✓</div>
+      <div>
+        <div class="why-item-title">Atención personalizada</div>
+        <p class="why-item-desc">Tu caso lo lleva directamente un abogado senior, no un paralegal. Siempre sabrás quién está a cargo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="testimonials" id="testimonios">
+  <div class="section-label">Lo que dicen nuestros clientes</div>
+  <h2>Resultados que<br>hablan por sí solos</h2>
+
+  <div class="testimonials-grid">
+    <div class="testimony">
+      <div class="testimony-stars">★★★★★</div>
+      <p class="testimony-text">Me despidieron sin pagar mis indemnizaciones tras 8 años de servicio y pensé que sería un trámite eterno e imposible. El equipo del estudio me guió con total transparencia y en menos de 4 meses logramos un avenimiento favorable que cubrió todo lo adeudado.</p>
+      <div class="testimony-meta">
+        <div class="testimony-avatar">CV</div>
+        <div class="testimony-info">
+          <div class="testimony-author">Carolina Valenzuela</div>
+          <div class="testimony-role">Asistente de Recursos Humanos · Santiago</div>
+          <div class="testimony-verified">✓ Caso Exitoso</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimony">
+      <div class="testimony-stars">★★★★★</div>
+      <p class="testimony-text">Sufrí una situación límite de acoso laboral y me daba pánico denunciar por miedo a perder mi fuente de ingresos. Los abogados me brindaron un apoyo humano excepcional y una estrategia impecable, logrando mi autodespido con la indemnización que correspondía.</p>
+      <div class="testimony-meta">
+        <div class="testimony-avatar">ME</div>
+        <div class="testimony-info">
+          <div class="testimony-author">Manuel Espinoza</div>
+          <div class="testimony-role">Supervisor de Logística · San Bernardo</div>
+          <div class="testimony-verified">✓ Cliente Verificado</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimony">
+      <div class="testimony-stars">★★★★★</div>
+      <p class="testimony-text">Como empresa, necesitábamos reestructurar nuestra dotación de personal cumpliendo estrictamente con la normativa. Su asesoría corporativa preventiva fue excelente, permitiendo llevar a cabo los cambios sin conflictos y con plena seguridad jurídica.</p>
+      <div class="testimony-meta">
+        <div class="testimony-avatar">AL</div>
+        <div class="testimony-info">
+          <div class="testimony-author">Andrés Larraín</div>
+          <div class="testimony-role">Gerente de Operaciones · Empresa Retail</div>
+          <div class="testimony-verified">✓ Caso Exitoso</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contact" id="contacto">
+  <div class="section-label">Contáctanos</div>
+  <h2>Tu primera consulta<br>es gratuita</h2>
+  <p class="section-intro">Cuéntanos tu situación y un abogado del equipo te responderá en menos de 24 horas hábiles.</p>
+
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-label">Dirección</div>
+          <div class="contact-value">CAMINO EL ALBA 9500, EDIFICIO B, OFICINA 322 <br>LAS CONDES, Santiago</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div>
+          <div class="contact-label">Teléfono</div>
+          <div class="contact-value">+56 9 88880465</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">✉</div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">consultas@ayrasociados.cl</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">🕐</div>
+        <div>
+          <div class="contact-label">Horario</div>
+          <div class="contact-value">Lunes a Viernes · 9:00 – 18:30</div>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Nombre</label>
+          <input type="text" placeholder="Tu nombre completo" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" placeholder="tu@email.com" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Teléfono</label>
+        <input type="tel" placeholder="+56 9 xxxx xxxx" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Tipo de consulta</label>
+        <select required>
+          <option value="">Selecciona una categoría</option>
+          <option>Despido injustificado</option>
+          <option>Acoso laboral</option>
+          <option>Horas extras / Remuneraciones</option>
+          <option>Negociación colectiva</option>
+          <option>Contratos / Finiquitos</option>
+          <option>Asesoría para empresa</option>
+          <option>Otra consulta</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Cuéntanos tu situación</label>
+        <textarea placeholder="Describe brevemente tu caso..." required></textarea>
+      </div>
+      <button type="submit" class="btn-primary" style="align-self: flex-start; margin-top: 0.5rem;">
+        Enviar Consulta →
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- SYSTEM MODALS -->
+<div id="modal-legal" class="modal-overlay" onclick="closeModalOnOverlay(event)">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <h3 class="modal-title" id="modal-title-text"></h3>
+    <div class="modal-body" id="modal-body-content"></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <a class="footer-logo" href="#">ARRIAZA & RAMÍREZ<span> </span>Asociados</a>
+  <div class="footer-copy">© 2026 ARRIAZA & RAMÍREZ Asociados. Todos los derechos reservados.</div>
+  <div class="footer-links">
+    <a href="javascript:void(0)" onclick="openModal('terminos')">Términos y condiciones</a>
+    <a href="javascript:void(0)" onclick="openModal('privacidad')">Política de privacidad</a>
+    <a href="javascript:void(0)" onclick="openModal('datos')">Tratamiento de datos</a>
+    <a href="javascript:void(0)" onclick="openModal('cookies')">Política de cookies</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
