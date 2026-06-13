@@ -33,8 +33,10 @@ Este documento registra los detalles del desarrollo, decisiones de arquitectura 
 ## 📋 Estado del Proyecto
 *   [x] **Modularización del Proyecto**: Código dividido limpiamente en `index.html`, `style.css` y `script.js`.
 *   [x] **Incorporación de fotos reales de equipo**: Se enlazaron las imágenes de los abogados y la administradora desde el directorio `media/`.
-*   [x] **Rediseño de la sección "Nuestro Equipo"**: Alineación horizontal, tamaño y borde redondeado en fotos.
+*   [x] **Rediseño de la sección "Nuestro Equipo"**: Tarjetas de equipo de 3 columnas estilo mockup con fotos oficiales de fondo, gradiente de contraste y efectos hover de zoom y brillo dorado (responsivo en móviles).
 *   [x] **Sección "Más que un abogado" a formato Grid 2x2**: Elementos convertidos a tarjetas interactivas con efectos Hover.
 *   [x] **Línea de tiempo interactiva**: Efecto de barra de carga e interactividad al hacer clic.
 *   [x] **Sistema de Ventanas Modales**: Modales fluidos en el pie de página para políticas legales.
-*   [x] **Documentación**: Creación de `README.md` y `agents.md`.
+*   [x] **Sección de Testimonios Reales**: Integración de las 3 reseñas de Google reales de los clientes (Isabella Z., Luis M. y Fernanda M.) junto con las respuestas oficiales de la abogada Francisca R.
+*   [x] **Identidad Oficial**: Logo oficial integrado en la barra de navegación (responsivo y adaptado) y configurado como favicon del sitio.
+*   [x] **Documentación**: Creación y actualización de `README.md` y `agents.md`.
