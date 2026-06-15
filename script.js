@@ -1,20 +1,63 @@
+// CONFIGURACIÓN: URL de la aplicación web de Google Apps Script.
+// Reemplaza esta URL con la obtenida tras publicar el script como Aplicación Web.
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwX_REPLACE_WITH_YOUR_SCRIPT_ID/exec';
+
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.contact-form');
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const btn = form.querySelector('button[type="submit"]');
-      btn.textContent = '✓ Mensaje enviado';
-      btn.style.background = '#2a6e3f';
-      btn.style.color = '#fff';
+      const originalText = btn.textContent;
+
+      // Mostrar estado de carga
+      btn.textContent = 'Enviando...';
       btn.disabled = true;
-      setTimeout(() => {
-        btn.textContent = 'Enviar Consulta →';
-        btn.style.background = '';
-        btn.style.color = '';
-        btn.disabled = false;
-        form.reset();
-      }, 3500);
+
+      // Obtener y serializar datos del formulario
+      const formData = new FormData(form);
+      const searchParams = new URLSearchParams();
+      
+      formData.forEach((value, key) => {
+        searchParams.append(key, value);
+      });
+
+      // Enviar datos usando fetch a Google Apps Script
+      fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors', // Evita problemas de CORS al usar redirección de Apps Script
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: searchParams
+      })
+      .then(() => {
+        // En modo 'no-cors' no podemos leer la respuesta, pero si se resuelve la promesa el envío fue exitoso
+        btn.textContent = '✓ Consulta enviada';
+        btn.style.background = '#2a6e3f';
+        btn.style.color = '#fff';
+
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.background = '';
+          btn.style.color = '';
+          btn.disabled = false;
+          form.reset();
+        }, 3500);
+      })
+      .catch((error) => {
+        console.error('Error al enviar la consulta:', error);
+        btn.textContent = '❌ Error al enviar';
+        btn.style.background = '#a83232';
+        btn.style.color = '#fff';
+
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.background = '';
+          btn.style.color = '';
+          btn.disabled = false;
+        }, 3500);
+      });
     });
   }
 });

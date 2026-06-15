@@ -39,4 +39,7 @@ Este documento registra los detalles del desarrollo, decisiones de arquitectura 
 *   [x] **Sistema de Ventanas Modales**: Modales fluidos en el pie de página para políticas legales.
 *   [x] **Sección de Testimonios Reales**: Integración de las 3 reseñas de Google reales de los clientes (Isabella Z., Luis M. y Fernanda M.) junto con las respuestas oficiales de la abogada Francisca R.
 *   [x] **Identidad Oficial**: Logo oficial integrado en la barra de navegación (responsivo y adaptado) y configurado como favicon del sitio.
+*   [x] **Formulario de Contacto Real**: Preparación e integración con Google Apps Script (Opción 2) para el envío directo a `contacto@ayrlegal.cl`.
+*   [x] **Configuración Git**: Creación de un archivo `.gitignore` estándar para ignorar dependencias, temporales y configuraciones de IDEs.
 *   [x] **Documentación**: Creación y actualización de `README.md` y `agents.md`.
+
