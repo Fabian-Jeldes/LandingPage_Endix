@@ -115,7 +115,7 @@ const modalData = {
     body: `
       <p>En <strong>Arriaza & Ramírez Asociados</strong>, valoramos su privacidad y nos comprometemos a proteger sus datos personales de acuerdo con las leyes vigentes.</p>
       <h4>1. Recolección de Datos</h4>
-      <p>Recopilamos información de contacto voluntaria enviada a través de nuestro formulario de consulta gratuita, que incluye su nombre, dirección de correo electrónico, número de teléfono y una breve descripción de su caso laboral.</p>
+      <p>Recopilamos información de contacto voluntaria enviada a través de nuestro formulario de consulta, que incluye su nombre, dirección de correo electrónico, número de teléfono y una breve descripción de su caso laboral.</p>
       <h4>2. Uso de la Información</h4>
       <p>Los datos suministrados serán utilizados única y exclusivamente para ponernos en contacto con usted, evaluar la viabilidad preliminar de su caso y agendar una primera reunión. No utilizaremos sus datos para campañas de spam ni publicidad no solicitada.</p>
       <h4>3. Divulgación a Terceros</h4>
