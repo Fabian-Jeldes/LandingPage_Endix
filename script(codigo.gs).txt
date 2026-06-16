@@ -1,0 +1,39 @@
+javascript
+function doPost(e) {
+  try {
+    // Obtener los parámetros enviados desde el sitio web
+    var data = e.parameter;
+    
+    var nombre = data.nombre || "No especificado";
+    var email = data.email || "No especificado";
+    var telefono = data.telefono || "No especificado";
+    var categoria = data.categoria || "No especificada";
+    var mensaje = data.mensaje || "No especificado";
+    
+    // Dirección a donde se enviará el correo
+    var destinatario = "contacto@ayrlegal.cl"; 
+    var asunto = "Nueva consulta web: " + categoria + " — " + nombre;
+    
+    // Cuerpo del correo (formateable)
+    var cuerpo = "Has recibido una nueva consulta desde el sitio web:\n\n" +
+                 "Nombre: " + nombre + "\n" +
+                 "Email: " + email + "\n" +
+                 "Teléfono: " + telefono + "\n" +
+                 "Tipo de Consulta: " + categoria + "\n\n" +
+                 "Mensaje / Situación:\n" + mensaje + "\n\n" +
+                 "---";
+                 
+    // Enviar el correo usando GmailApp -> a cuenta en sesión
+    GmailApp.sendEmail(destinatario, asunto, cuerpo, {
+      replyTo: email
+    });
+    
+    // return success in case
+    return ContentService.createTextOutput(JSON.stringify({ status: "success" }))
+                         .setMimeType(ContentService.MimeType.JSON);
+  } catch (error) {
+    // error pa identificar fallo
+    return ContentService.createTextOutput(JSON.stringify({ status: "error", message: error.toString() }))
+                         .setMimeType(ContentService.MimeType.JSON);
+  }
+}
