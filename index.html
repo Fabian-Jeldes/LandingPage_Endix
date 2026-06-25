@@ -4,12 +4,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arriaza & Ramírez Asociados — Derecho Laboral</title>
+  <title>Arriaza & Ramírez Asociados | Estudio Jurídico en Santiago</title>
+  <meta name="description" content="Estudio jurídico en Las Condes, Santiago. Especialistas en Derecho Laboral, Civil, Familia y Migratorio. Agenda tu consulta legal con abogados expertos.">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arriaza & Ramírez Asociados | Estudio Jurídico en Santiago">
+  <meta property="og:description" content="Asesoría y representación jurídica especializada en derecho laboral, civil, familia y migración en Chile.">
+  <meta property="og:image" content="https://www.ayrlegal.cl/media/logo/logo_oficial.png">
+  <meta property="og:url" content="https://www.ayrlegal.cl">
+  <meta property="og:type" content="website">
+
   <link rel="icon" type="image/png" href="media/logo/logo_oficial.png">
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Schema Markup (Datos Estructurados) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Arriaza & Ramírez Asociados",
+    "image": "https://www.ayrlegal.cl/media/logo/logo_oficial.png",
+    "url": "https://www.ayrlegal.cl",
+    "telephone": "+56958798694",
+    "email": "contacto@ayrlegal.cl",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Camino El Alba 9500, Edificio B, Oficina 322",
+      "addressLocality": "Las Condes",
+      "addressRegion": "Región Metropolitana",
+      "postalCode": "7550000",
+      "addressCountry": "CL"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-33.407981", 
+      "longitude": "-70.528431"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "18:30"
+    }
+  }
+  </script>
 </head>
 
 <body>
@@ -31,7 +79,7 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-left">
-      <h1>Defendemos lo que más importa:<br><em>su familia, su trabajo y proyecto de vida</em> <br></h1>
+      <h1>Estudio Jurídico en Santiago:<br><em>Defendemos su familia, su trabajo y proyecto de vida</em> <br></h1>
       <p class="hero-sub">
         Te acompañamos cuando más lo necesitas. Ofrecemos asesoría y representación jurídica con rigor, cercanía y
         compromiso en derecho laboral, civil, familia, migratorio y otras materias, entregando soluciones adaptadas a
@@ -90,31 +138,32 @@
       <div class="service-card">
         <div class="service-icon">🛂</div>
         <div class="service-title">Derecho Migratorio</div>
-        <p class="service-desc">Te ayudamos con la regulación de tu estado migratorio para que puedas vivir tranquilo.
-        </p>
+        <p class="service-desc">Te ayudamos con la regulación de tu estado migratorio para que puedas vivir tranquilo.</p>
+        <a href="./derecho-migratorio/" class="service-card-link">Saber más &rarr;</a>
       </div>
       <div class="service-card">
         <div class="service-icon">⚖️</div>
         <div class="service-title">Derecho Civil</div>
-        <p class="service-desc">Nos enfocamos en acompañarte en procesos como: resolución de conflictos civiles que
-          puedan afectar tu patrimonio, tus relaciones contractuales o tu tranquilidad.</p>
+        <p class="service-desc">Nos enfocamos en acompañarte en procesos como: resolución de conflictos civiles que puedan afectar tu patrimonio, tus relaciones contractuales o tu tranquilidad.</p>
+        <a href="./derecho-civil/" class="service-card-link">Saber más &rarr;</a>
       </div>
       <div class="service-card">
         <div class="service-icon">💼</div>
         <div class="service-title">Derecho Laboral</div>
         <p class="service-desc">Despido injustificado, negociación colectiva, acoso laboral, contratos y finiquitos.</p>
+        <a href="./abogado-laboral/" class="service-card-link">Saber más &rarr;</a>
       </div>
       <div class="service-card">
         <div class="service-icon">👨‍👩‍👧‍👦</div>
         <div class="service-title">Derecho de Familia</div>
-        <p class="service-desc">Te acompañaremos en procesos familiares que pueden impactar profundamente tu vida y la
-          de tus seres queridos. Brindamos asesoría y representación en divorcios, pensiones de alimentos, cuidado
-          personal, régimen de visitas y otras materias de familia.</p>
+        <p class="service-desc">Te acompañaremos en procesos familiares que pueden impactar profundamente tu vida y la de tus seres queridos. Brindamos asesoría y representación en divorcios, pensiones de alimentos, cuidado personal, régimen de visitas y otras materias de familia.</p>
+        <a href="./abogado-familia/" class="service-card-link">Saber más &rarr;</a>
       </div>
       <div class="service-card">
         <div class="service-icon">📋</div>
         <div class="service-title">Otros Servicios</div>
         <p class="service-desc">Asesoría a empresas, materias de seguridad social, entre otros.</p>
+        <a href="#contacto" class="service-card-link">Consultar &rarr;</a>
       </div>
     </div>
   </section>
@@ -313,20 +362,20 @@
         <div class="form-row">
           <div class="form-group">
             <label class="form-label">Nombre</label>
-            <input type="text" placeholder="Tu nombre completo" required>
+            <input type="text" name="nombre" placeholder="Tu nombre completo" required>
           </div>
           <div class="form-group">
             <label class="form-label">Email</label>
-            <input type="email" placeholder="tu@email.com" required>
+            <input type="email" name="email" placeholder="tu@email.com" required>
           </div>
         </div>
         <div class="form-group">
           <label class="form-label">Teléfono</label>
-          <input type="tel" placeholder="+56 9 xxxx xxxx" required>
+          <input type="tel" name="telefono" placeholder="+56 9 xxxx xxxx" required>
         </div>
         <div class="form-group">
           <label class="form-label">Tipo de consulta</label>
-          <select required>
+          <select name="categoria" required>
             <option value="">Selecciona una categoría</option>
             <option>Despido injustificado</option>
             <option>Acoso laboral</option>
@@ -339,7 +388,7 @@
         </div>
         <div class="form-group">
           <label class="form-label">Cuéntanos tu situación</label>
-          <textarea placeholder="Describe brevemente tu caso..." required></textarea>
+          <textarea name="mensaje" placeholder="Describe brevemente tu caso..." required></textarea>
         </div>
         <button type="submit" class="btn-primary" style="align-self: flex-start; margin-top: 0.5rem;">
           Enviar Consulta →
@@ -373,10 +422,7 @@
       <strong>Servicios Jurídicos:</strong> Asesoría y representación jurídica especializada en Santiago de Chile.
       Abogado laboral, abogado civil, abogado de familia y abogado de migración.
     </div>
-    <div class="sr-only">
-      Abogado laboral en Santiago de Chile, abogado civil, abogado de familia, abogado de migración, derecho laboral
-      chile, despidos injustificados, divorcio de mutuo acuerdo, pensión de alimentos.
-    </div>
+
   </footer>
 
   <script src="script.js"></script>

@@ -1328,3 +1328,22 @@ h1 {
     gap: 0.25rem;
   }
 }
+
+/* SEO Multi-page service link styles */
+.service-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  transition: var(--transition-smooth);
+}
+
+.service-card-link:hover {
+  color: var(--ink);
+  transform: translateX(4px);
+}

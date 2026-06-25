@@ -1,6 +1,6 @@
 // CONFIGURACIÓN: URL de la aplicación web de Google Apps Script.
 // Reemplaza esta URL con la obtenida tras publicar el script como Aplicación Web.
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwX_REPLACE_WITH_YOUR_SCRIPT_ID/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwF1gTnSJoawxdhZUfe-62K5VbwugQlmDzp90o9aX23eOZ3Md_cJESZCcTk75PJrSYU/exec';
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.contact-form');
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Obtener y serializar datos del formulario
       const formData = new FormData(form);
       const searchParams = new URLSearchParams();
-      
+
       formData.forEach((value, key) => {
         searchParams.append(key, value);
       });
@@ -31,33 +31,33 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         body: searchParams
       })
-      .then(() => {
-        // En modo 'no-cors' no podemos leer la respuesta, pero si se resuelve la promesa el envío fue exitoso
-        btn.textContent = '✓ Consulta enviada';
-        btn.style.background = '#2a6e3f';
-        btn.style.color = '#fff';
+        .then(() => {
+          // En modo 'no-cors' no podemos leer la respuesta, pero si se resuelve la promesa el envío fue exitoso
+          btn.textContent = '✓ Consulta enviada';
+          btn.style.background = '#2a6e3f';
+          btn.style.color = '#fff';
 
-        setTimeout(() => {
-          btn.textContent = originalText;
-          btn.style.background = '';
-          btn.style.color = '';
-          btn.disabled = false;
-          form.reset();
-        }, 3500);
-      })
-      .catch((error) => {
-        console.error('Error al enviar la consulta:', error);
-        btn.textContent = '❌ Error al enviar';
-        btn.style.background = '#a83232';
-        btn.style.color = '#fff';
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+            btn.style.color = '';
+            btn.disabled = false;
+            form.reset();
+          }, 3500);
+        })
+        .catch((error) => {
+          console.error('Error al enviar la consulta:', error);
+          btn.textContent = '❌ Error al enviar';
+          btn.style.background = '#a83232';
+          btn.style.color = '#fff';
 
-        setTimeout(() => {
-          btn.textContent = originalText;
-          btn.style.background = '';
-          btn.style.color = '';
-          btn.disabled = false;
-        }, 3500);
-      });
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+            btn.style.color = '';
+            btn.disabled = false;
+          }, 3500);
+        });
     });
   }
 });
@@ -67,7 +67,7 @@ function activateStep(element, stepNumber) {
   if (element.classList.contains('active') || element.classList.contains('loading')) {
     return;
   }
-  
+
   const allSteps = document.querySelectorAll('.step');
   allSteps.forEach(step => {
     step.classList.remove('active', 'loading');
@@ -77,17 +77,17 @@ function activateStep(element, stepNumber) {
       bar.style.width = '0%';
     }
   });
-  
+
   element.classList.add('loading');
   const progressBar = element.querySelector('.step-progress-bar');
-  
+
   setTimeout(() => {
     if (progressBar) {
       progressBar.style.transition = 'width 1.5s cubic-bezier(0.25, 0.8, 0.25, 1)';
       progressBar.style.width = '100%';
     }
   }, 50);
-  
+
   setTimeout(() => {
     element.classList.remove('loading');
     element.classList.add('active');
@@ -156,10 +156,10 @@ const modalData = {
 function openModal(modalKey) {
   const data = modalData[modalKey];
   if (!data) return;
-  
+
   document.getElementById('modal-title-text').innerText = data.title;
   document.getElementById('modal-body-content').innerHTML = data.body;
-  
+
   const modal = document.getElementById('modal-legal');
   modal.classList.add('active');
   document.body.classList.add('modal-open');
